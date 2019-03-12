@@ -1,0 +1,585 @@
+@font-face {
+  
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.progress-bar {
+        background-color: #1a1a1a;
+        height: 25px;
+        padding: 5px;
+        width: 85%;
+        margin: 0 auto;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -moz-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+        -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+        box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.progress-bar span {
+        display: inline-block;
+        height: 25px;
+        width: 80%;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+        -webkit-transition: width .4s ease-in-out;
+        -moz-transition: width .4s ease-in-out;
+        -ms-transition: width .4s ease-in-out;
+        -o-transition: width .4s ease-in-out;
+        transition: width .4s ease-in-out;
+}
+
+.stripes span {
+        -webkit-background-size: 30px 30px;
+        -moz-background-size: 30px 30px;
+        background-size: 30px 30px;
+        background-image: -webkit-gradient(linear, left top, right bottom,
+                                                color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+                                                color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+                                                color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+                                                to(transparent));
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);            
+
+        -webkit-animation: animate-stripes 3s linear infinite;
+        -moz-animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+        0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+@-moz-keyframes animate-stripes {
+        0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+.blue span {
+        background-color: #34c2e3;
+}
+
+.fiol span {
+		background-color: purple;
+}
+
+.orange span {
+          background-color: #fecf23;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#fecf23), to(#fd9215));
+          background-image: -webkit-linear-gradient(top, #fecf23, #fd9215);
+          background-image: -moz-linear-gradient(top, #fecf23, #fd9215);
+          background-image: -ms-linear-gradient(top, #fecf23, #fd9215);
+          background-image: -o-linear-gradient(top, #fecf23, #fd9215);
+          background-image: linear-gradient(top, #fecf23, #fd9215);
+}
+
+.red span {
+		background-color: red;
+}		      
+
+.green span {
+          background-color: #a5df41;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(#a5df41), to(#4ca916));
+          background-image: -webkit-linear-gradient(top, #a5df41, #4ca916);
+          background-image: -moz-linear-gradient(top, #a5df41, #4ca916);
+          background-image: -ms-linear-gradient(top, #a5df41, #4ca916);
+          background-image: -o-linear-gradient(top, #a5df41, #4ca916);
+          background-image: linear-gradient(top, #a5df41, #4ca916);
+}
+
+.stripes span {
+        -webkit-background-size: 30px 30px;
+        -moz-background-size: 30px 30px;
+        background-size: 30px 30px;
+        background-image: -webkit-gradient(linear, left top, right bottom,
+                                                color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+                                                color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+                                                color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+                                                to(transparent));
+        background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                                transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                                transparent 75%, transparent);            
+
+        -webkit-animation: animate-stripes 3s linear infinite;
+        -moz-animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+        0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+@-moz-keyframes animate-stripes {
+        0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: black;
+}
+
+@media (min-width: 576px) {
+  
+}
+
+@media (min-width: 768px) {
+ 	.navigation-item {
+		width: 13%;
+	}
+
+	.navigetion-item a {
+		font-size: 11px;
+	}
+}
+
+@media (min-width: 992px) {
+  .navigation-item a {
+  		font-size: 16px;
+    }
+
+  .navigation-item {
+		width: 13%;
+	}
+
+	.button {
+  		width: 150px;
+  		height: 40px;
+  	}
+}
+
+@media (min-width: 1200px) {
+  .site-name {
+    color: rgb(51,100,65);
+    font-size: 25px;
+    padding: 2px;
+    text-shadow: 0px 1px 9px rgb(50,69,55);
+  }
+	.main-head {
+		margin-left: auto;
+		background-size: 100% 100%;
+		width: 750px;
+		height: 350px;
+	}
+
+	.logo-min {
+		margin: 0 auto;
+		background-size: 95% 95%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 450px;
+		height: 350px;
+	}
+
+	.navigation-item {
+		width: 13%;
+	}
+	
+  .navigation-item a {
+		font-size: 20px;
+  }
+
+  .logo-wrapper {
+  	margin-left: 25px;
+  	margin-right: 0px;
+  }
+
+ 	.button {
+		width: 150px;
+		height: 40px;
+  }
+
+  .contain {
+		
+	}
+
+  .content-wrapper {
+  	margin-left: 20px;
+		margin: 0 auto;
+		width: 70%;
+  }
+
+	.sitebar {
+		width: 300px;
+		margin-right: 15px;
+		margin-left: 20px;
+    height: 380px;
+	}
+
+  .sitebar-title {
+    margin-top: 10px;
+    font-size: 30px;
+		padding: 5px;
+  }
+
+  .main-content-title {
+  	font-size: 45px;
+    text-shadow: 0px 5px 25px rgba(0,60,94, 0.5);
+  }
+
+	.main-content-text {
+		padding-left: 30px;
+		padding-right: 10px;
+		width: 50%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+  .main-content-img {
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+	.second-text {
+    height: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+  .social-buttons {
+  	margin-top: auto;
+  	margin-bottom: auto;
+  	width: 300px;
+  	height: 100px;
+  }
+
+  .contacts {
+  	margin-top: auto;
+  	margin-bottom: auto;
+  	width: 300px;
+  	height: 100px;
+  }
+
+  .footer-human-helper {
+  	margin-top: auto;
+  	margin-bottom: auto;
+  	width: 300px;
+  	height: 100px;
+  }
+
+  .footer-wrapper {
+  	height: 180px;
+  }
+
+	.btn {
+  	font-size: 25px;	
+  	width: 250px;
+  	height: 55px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .sale {
+    padding: 2px;
+    background-color: darkorange;
+    font-size: 25px;
+    box-shadow: 0px 0px 15px rgb(94,84,52);
+  }
+	
+}
+
+.main-header {
+	background-color: black;
+}
+
+.main-header-logo {
+	
+}
+
+.logo-wrapper {
+	display: flex;	
+}
+
+.main-header-title {
+	font-size: 80px;
+	text-align: center;
+	margin-top: 5px;
+	color: #2E328A;
+	font-weight: bold;
+	font-style: oblique;
+	background: linear-gradient(darkblue, #9D3469);  /* подробнее про градиенты */ 
+  	-webkit-background-clip: text;  /* подробнее про background-clip */ 
+  	color: transparent;
+  text-shadow: 0 8px 50px rgba(100,38,2, 0.8);
+}
+
+.navigation-list-group {
+	margin-top: 10px;
+	margin-left: 0;
+	padding-left: 0;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+}
+
+.navigation-item {
+	background-color: #5F297A;
+	text-align: center;
+	border: 5px solid #5F297A;
+	border-radius: 5px;
+}
+
+.navigation-item:hover {
+	background-color: #652F8E;
+	border-color: #652F8E;
+	cursor: pointer;
+}
+
+.navigation-item:hover a {
+	text-decoration: underline;
+}
+
+.navigation-item a {
+	color: black;
+	font-weight: bold;
+}
+
+.logo-min {
+	background-image: url("img/logorectn.png");
+}
+
+.main-head {
+	background-image: url(img/head.jpg);
+}
+
+.upper-head {
+	display: flex;
+	justify-content: space-around;
+}
+
+.button {
+	vertical-align: middle;
+	border: 5px solid #5F297A;
+	border-radius: 10px;
+	margin-top: 20px;
+	background-color: #5F297A;
+	font-weight: bold;
+}
+
+.button:hover {
+	background-color: #652F8E;
+	border-color: #652F8E;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.contain {
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.first-news-wrapper {
+  display: flex;
+}
+
+.main-content{
+  
+}
+
+.main-content-img {
+  
+}
+
+.main-content-text {
+  font-size: 19px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sitebar {
+	border: 5px solid #5f297a;
+	border-radius: 10px;
+}
+
+.sitebar-title {
+  color: rgb(48,60,94);
+	font-weight: bold;
+  text-shadow: 0px 0px 10px rgba(48,28,94, 1);
+	text-align: center;
+}
+
+.second-news-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.second-content-img {
+  width: 50%;
+}
+
+.second-content-text {
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 19px;
+}
+
+.sitebar-proggres {
+	list-style-type: none;
+	padding-left: 10px;
+	margin: 0;
+}
+
+.sitebar-proggres-item {
+	
+}
+
+.item-label {
+	margin: 0;
+	padding: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content-wrapper {
+	border: 5px solid #5f297a;
+	border-radius: 10px;
+}
+
+.main-content-title {
+	text-align: center;
+	font-weight: bolder;
+	background: linear-gradient(darkblue, #9D3469);  /* подробнее про градиенты */ 
+  	-webkit-background-clip: text;  /* подробнее про background-clip */ 
+  	color: transparent;	
+  	border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.main-content-text {
+	font-weight: bold;
+}
+
+.helper-wrapper {
+	border-bottom: 2px solid white;
+}
+
+.second-text {
+	font-weight: bold;
+}
+
+.main-footer {
+
+}
+
+.footer-wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.social-buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contacts {
+	font-weight: bold;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.footer-human-helper {
+	background-color: red;
+}
+
+.social {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.social a {
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    float: left;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 46px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+
+.vk a:hover {
+	background: #5d84ae; 
+	color: #fff;
+}
+
+.instagram a:hover {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	color: #fff;
+}
+
+.telegram a:hover {
+	background: #249bd7; 
+	color: #fff;
+}
+
+.btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #000;
+	vertical-align: middle;
+	border: 5px solid gold;
+	border-radius: 10px;
+	background-color: gold;
+	font-weight: bold;
+  box-shadow: 0 0 70px rgba(34,71,86, 1);
+}
+
+.btn:hover {
+	background-color: orange;
+	border-color: orange;
+	cursor: pointer;
+	text-decoration: underline;
+  box-shadow: 0 0 70px rgba(29,0,86, 1);
+}
