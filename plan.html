@@ -12,23 +12,8 @@
 </head>
 	
 <body>
-	<header class="main-header">
-		<div class="upper-head">
-			<button class="button">Инфо</button>
-			<h1 class="main-header-title">Победи себя!</h1>
-			<button class="button">Вход</button>
-		</div>
-		<div class="logo-wrapper">
-			<div class="logo-min" width="450" height="350"></div>
-			<!-- Добавить ссылку на главную стр --><div></div>
-			<div class="main-head">
-				<a href="#" class="main-header-logo">
-				</a>
-			</div>
-		</div>
-
-				<!-- Добавить ссылки элементам -->
-		<ul class="navigation-list-group">
+	<header class="main-header-plan">
+		<ul class="navigation-list-group-plan">
 			<li class="navigation-item"><a href="index.html">Главная</a></li>
 			<li class="navigation-item"><a href="">Сегодня</a></li>
 			<li class="navigation-item"><a href="">Цели</a></li>
@@ -40,10 +25,10 @@
 
 	</header>
 
-	<main class="contain">
-		<section class="content-wrapper">
+	<main class="content-plan">
+		<section class="content-wrapper-plan">
 			<section class="main-content">
-				<h2 class="main-content-title">
+				<h2 class="main-content-title-plan">
 					План на сегодня
 				</h2>
 
@@ -52,22 +37,35 @@
 
 						<p class="quest-text">Задача</p>
 
-						<i class="icon bars fas fa-caret-down"></i>
+						<i class="icon-plan fas fa-caret-down"></i>
+
+						<i class="icon-plan fas fa-times"></i>
 
 						<ul class="underquests-list visually-hidden">
 							<li class="underquest-task-text">
-								Подзадача1
+								• Подзадача1
 							</li>
 
 
 							<li class="underquest-task-text">
-								Подзадача2
+								• Подзадача2
 							</li>
 						</ul>
-
+						
+						<form class="underquest-input-form visually-hidden">
+							<label class="underquest-input-label" for="underquest-input">Добавление подзадачи</label>
+							<input class="underquest-input-input" type="text" id="underquest-input" placeholder="Запишите подзадачу">
+							<button class="add-underquest-task">Добавить подзадачу</button>
+						</form>
 					</li>
 				</ul>
+				
+				<form class="quest-input-form">
+					<label class="quest-input-label" for="quest-input">Добавление задачи</label>
+					<input class="quest-input-input" type="text" id="quest-input" placeholder="Запишите задачу">
+				</form>
 
+				<button class="add-quest-task">Добавить задачу</button> 
 			</section>
 		</section>
 
@@ -129,7 +127,7 @@
 		</section>
 	</main>
 
-	<footer class="main-footer">
+	<footer class="main-footer-plan">
 		<div class="footer-wrapper">
 			<div class="social-buttons">
 				<div class="social vk">
@@ -153,12 +151,11 @@
 				</p>
 			</div>
 			
-			<!-- Челик -->
 			<div class="footer-human-helper">
 				<img src="" alt="">
 			</div>
 		</div>
 	</footer>
-<script src="js/plugin.js"></script>
+<script src="js/plugin-info.js"></script>
 </body>
 </html>

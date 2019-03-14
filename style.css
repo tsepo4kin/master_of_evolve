@@ -2,6 +2,10 @@
   
 }
 
+html {
+  height: 100%;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -237,6 +241,12 @@ body {
 		width: 70%;
   }
 
+  .content-wrapper-plan {
+    margin-left: 20px;
+    margin: 0 auto;
+    width: 70%;
+  }
+
 	.sitebar {
 		width: 300px;
 		margin-right: 15px;
@@ -350,7 +360,8 @@ body {
 
 .navigation-list-group {
 	margin-top: 10px;
-	margin-left: 0;
+	margin-left: auto;
+  margin-right: auto;
 	padding-left: 0;
 	display: flex;
 	list-style-type: none;
@@ -612,7 +623,26 @@ body {
 }
 
 @media (min-width: 1200px) {
-  
+  .quest {
+    
+  }
+
+  .quest-text {
+    width: 85%;
+  }
+
+  .add-underquest-task {
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+  }
+
+  .add-quest-task {
+    font-size: 24px;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+  }
 }
 
 ul {
@@ -623,19 +653,25 @@ ul {
 }
 
 .plan-today {
-  border: 1px solid white;
+  padding: 0;
 }
 
 .quest {
+  border: 3px solid #E3DDB5;
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .quest-text {
-  
+  padding-left: 15%;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.fa-caret-down {
+.icon-plan {
   font-size: 50px;
   margin-left: auto;
   margin-right: 25px;
@@ -644,12 +680,167 @@ ul {
 
 
 .underquests-list {
-
+  padding: 0;
+  width: 100%;
 }
 
 .underquest-task-text {
-  background-color: white;
-  color: black;
+  width: 90%;
+  background-color: transparent;
+  color: #BB983E;
+  font-weight: bold;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-underquest-task {
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #202060;
+  border: 2px solid darkblue;
+}
+
+.add-underquest-task:hover {
+  border-color: blue;
+  text-decoration: underline;
+}
+
+.add-underquest-task:active {
+  background-color: lightblue;
+  color: black;
+}
+
+.content-wrapper-plan {
+  background-color: transparent;
+  border: 3px solid orange;
+  border-radius: 10px;
+}
+
+.main-content-title-plan {
+  text-align: center;
+  font-weight: bolder;
+  background: linear-gradient(white, gray);  /* подробнее про градиенты */ 
+    -webkit-background-clip: text;  /* подробнее про background-clip */ 
+    color: transparent; 
+    border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.add-quest-task {
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #9D7F34;
+  border: 2px solid #C3B74B;
+}
+
+.add-quest-task:hover {
+  border-color: yellow;
+  text-decoration: underline;
+}
+
+.add-quest-task:active {
+  background-color: lightyellow;
+  color: black;
+}
+
+.quest-input-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.content-plan {
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  background: repeating-radial-gradient(ellipse farthest-corner at center center, rgb(11, 21, 91) 0%, rgb(15, 15, 15) 100%);
+}
+
+.navigation-list-group-plan {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.main-header-plan {
+  background: repeating-radial-gradient(ellipse farthest-corner at center center, rgb(11, 21, 91) 0%, rgb(15, 15, 15) 100%);
+}
+
+.main-footer-plan {
+  background: repeating-radial-gradient(ellipse farthest-corner at center center, rgb(11, 21, 91) 0%, rgb(15, 15, 15) 100%);
+}
+
+.quest-input-form {
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
+
+.quest-input-label {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: linear-gradient(white, gray);  /* подробнее про градиенты */ 
+    -webkit-background-clip: text;  /* подробнее про background-clip */ 
+    color: transparent;
+}
+
+.quest-input-input {
+
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: gold;
+  border: 3px solid black;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.underquest-input-form {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+
+.underquest-input-label {
+  width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  background: linear-gradient(white, gray);  /* подробнее про градиенты */ 
+    -webkit-background-clip: text;  /* подробнее про background-clip */ 
+    color: transparent;
+}
+
+.underquest-input-input {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightblue;
+  border: 3px solid black;
+  border-radius: 4px;
+  text-align: center;
 }
